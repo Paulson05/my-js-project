@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="javademo.css">
+        <title>Processing forms with events</title>
+    </head>
+    <style>
+    
+    
+    </style>
+    <body>
+           
+    <div id="form-container">
+        What's your name?
+        <input id="name" type="text" required >
+        What's your surname? 
+        <input id="surname" type="text" required>
+        your email?
+            <input id="email" type="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="comment" required></textarea><br>
+        <button id="button" type="button">send request</button>
+        <div id="message"></div>
+    </div>
+    <script src="demo.js"></script>
+    </body>
+</html> 

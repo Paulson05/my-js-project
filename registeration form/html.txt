@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form-container">
+  
+        <form action="" method="POST">
+                <h2>Register</h2>
+    <input  type="text" name="" id="firstname" placeholder="Your First name">
+    <input type="text" name="" id="lastname" placeholder="Your lastname name">
+    <input type="text" name="" id="username" placeholder="Your Username">
+    <input type="email" name="" id="email" placeholder="Your Email">
+    <input type="password" name="" id="password" placeholder="Your password">
+    <button  type="submit" id="button"  >submit</button>
+<div   id="message"></div>
+</form>
+
+</div>
+<script src="demo.js"></script>
+</body>
+</html>

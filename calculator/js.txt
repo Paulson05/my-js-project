@@ -1,0 +1,14 @@
+function insertbtn(num) {
+  document.calculator.textview.value = document.calculator.textview.value+num;
+}  
+function equalbtn() {
+   var exp = document.calculator.textview.value
+   document.calculator.textview.value = eval(exp);
+}
+function clearbtn() {
+  document.calculator.textview.value = "";
+}
+function backbtn() {
+  var exp = document.calculator.textview.value
+  document.calculator.textview.value =  exp.substring(0, exp.length-1);
+}    

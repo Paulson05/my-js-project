@@ -1,0 +1,26 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="video">
+            
+                <video controls>
+                    <source src="Like an Avalanche - Hillsong United - Lyrics _HD_ ( 240 X 426 ).mp4" type="video/mp4">
+                        sorry, you brower doesnot support embeded video:(
+                </video>
+                <p> 
+                    <input id="play" type="submit" value="play">
+                    <input id="pause" type="submit" value="pause">
+                    <input id="restart" type="submit" value="go to the begining">
+                    timestamp: <span id="timestamp">0:00</span>
+                </p>
+       </div> 
+    <script src="demo.js"></script>
+</body>
+</html> 

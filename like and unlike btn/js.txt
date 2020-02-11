@@ -1,0 +1,15 @@
+var likebtn = document.getElementById("like");
+var unlikebtn =  document.getElementById("unlike");
+var btnnumlike  =document.getElementById("btnnumlike");
+var btnnumunlike  =document.getElementById("btnnumunlike");
+
+likenum = 0;
+unlikenum = 0;
+likebtn.addEventListener("click", function () {
+    likenum++;
+    btnnumlike.textContent = likenum;
+})
+unlikebtn.addEventListener("click", function () {
+    unlikenum++;
+    btnnumunlike.textContent = unlikenum;
+})

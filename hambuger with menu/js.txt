@@ -1,0 +1,6 @@
+var menu = document.getElementById("menu");
+var hambuger = document.getElementById("hambuger-box2");
+ hambuger.addEventListener("click", function(){
+document.body.classList.toggle("change");
+  menu.classList.toggle("dis2");
+ });

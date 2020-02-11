@@ -1,0 +1,37 @@
+var button = document.querySelector("button");
+var paragraph =   document.querySelector("p");
+button.addEventListener("click", function(){
+paragraph.textContent = "someone clicked the button";
+paragraph.style.border = "2px solid red";
+button.style.background = "red";
+paragraph.style.width = "30%";
+paragraph.style.height = "700px";
+paragraph.style.borderRadius = "15px"
+});
+   
+
+
+
+html
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="demo.js"></script>
+        
+        <title>java demo</title>
+       
+    </head>
+    <style>
+          
+        </style>
+    <body>
+        <button >click me</button>
+        <p>no one has click me</p>
+        <script src="demo.js"></script> 
+    </body>
+    </html>

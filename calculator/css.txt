@@ -1,0 +1,28 @@
+.calbtn{
+    width: 40%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(6, 40px);
+    grid-gap: 10px;
+    border: 2px solid black;
+    margin: auto;
+    background: red;
+}
+#container{
+    border: 2px solid red; 
+}
+.textview{
+    margin-left: 200px;
+    width: 40%;
+    height: 40px;
+    border: 2px solid black;
+}
+.btnequal{
+    height: 90px;
+    background-color: rgb(204, 191, 10);
+}
+.btn{
+    background-color: blueviolet
+}
+

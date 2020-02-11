@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+        <button onclick="document.getElementById('link').click()">Download!</button>
+        <a id="link" href="Like an Avalanche - Hillsong United - Lyrics _HD_ ( 240 X 426 ).mp4" download hidden></a>
+    <script src="demo.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+function download() {
+  var iframe = document.getElementById('invisible');
+  iframe.src = "Like an Avalanche - Hillsong United - Lyrics _HD_ ( 240 X 426 ).mp4";
+}

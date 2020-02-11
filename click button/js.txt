@@ -1,0 +1,14 @@
+var button =   document.querySelector("button");
+ var iSGreen = false;
+button.addEventListener("click", function(){
+ if(iSGreen){
+    document.body.style.background = "white";
+    iSGreen = false;
+ }
+ else{
+   document.body.style.background = "green";
+   iSGreen = true;
+ }
+  
+});
+    

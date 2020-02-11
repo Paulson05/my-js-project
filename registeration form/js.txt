@@ -1,0 +1,19 @@
+var button = document.getElementById("button");
+button.addEventListener("click", function(){
+var firstname = document.getElementById("firstname").value;
+var lastname = document.getElementById("lastname").value;
+var username = document.getElementById("username").value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+var greeting;
+if (button === "firstname") {
+    greeting = "Registration successfull " + username;
+} 
+else if (button === "username") {
+    greeting = "Registration successfull " + username;
+}
+else {
+    greeting = "Registration successfull " + username;
+};
+document.getElementById("message").textContent += greeting;
+});

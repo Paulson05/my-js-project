@@ -1,0 +1,43 @@
+var button = document.getElementById("button");
+button.addEventListener("click", function(){ 
+    var fname = document.getElementById("firstname").value,
+     lname =  document.getElementById("lastname").value,
+    age =   document.getElementById("age").value,
+     phone =  document.getElementById("phone").value,
+     username = document.getElementById("username").value,
+     email =  document.getElementById("email").value,
+      password = document.getElementById("password").value;
+      if (fname == "") {
+          alert("please fill your firstname");
+          return false;
+      }
+      if (lname == "") {
+        alert("please fill your lastname");
+        return false;
+    }
+     if (age == "") {
+        alert("please fill your age");
+        return false;
+     }
+     if (phone == "") {
+        alert("please fill your phone number");
+        return false;
+     }
+     if (username == "") {
+        alert("please fill your username");
+        return false;
+     }
+     if (email == "") {
+        alert("please fill your email");
+        return false;
+     }
+     if (password == "") {
+        alert("please fill your password");
+        return false;
+     }
+return true;
+       greeting = "welcome " + username;
+
+
+     document.getElementById("message").textContent += greeting;
+})

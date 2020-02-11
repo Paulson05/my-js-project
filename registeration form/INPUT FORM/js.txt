@@ -1,0 +1,17 @@
+var button = document.getElementById("button");
+button.addEventListener("click", function() {
+  var name = document.getElementById("name").value;
+  var surname = document.getElementById("surname").value;
+  var email = document.getElementById("email").value;
+  var greeting;
+  if (button === "name") {
+      greeting = "welcome " + name + " " + surname + " " + "message will be sent to " + email + "" + "thank you";
+  }
+ else if (button === "surname") {
+    greeting = "welcome " + name + " " + surname + " " + "message will be sent to " + email + "" + "thank you";
+  } else {
+    greeting = "welcome " + name + " " + surname + " " + "message will be sent to " + email + "" + "thank you";
+
+  }
+  document.getElementById("message").textContent += greeting;
+});

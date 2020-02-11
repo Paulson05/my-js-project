@@ -1,0 +1,20 @@
+var videoContainer = document.getElementById("video"),
+videoEl = document.querySelector("video"),
+parentEl  = document.querySelector(".parent"),
+playBtn = document.getElementById("play"),
+pauseBtn = document.getElementById("pause"),
+restartBtn = document.getElementById("restart"),
+timestamp = document.getElementById("timestamp");
+videoContainer.style.display = "block";
+playBtn.addEventListener("click", function() {
+     videoEl.play();
+})
+pauseBtn.addEventListener("click", function() {
+     videoEl.pause();
+})
+restartBtn.addEventListener("click", function(){
+     videoEl.currentTime = 0;
+})
+videoEl.addEventListener("timeupdate", function() {
+     timestamp.innerHTML = parseInt(videoEl.currentTime);
+})

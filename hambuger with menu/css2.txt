@@ -1,0 +1,93 @@
+.hambuger{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 10px;
+    z-index: 0;
+   
+     
+}
+.line{
+position: absolute;
+width: 50px;  
+height: 5px;
+margin: 8px auto;
+background: red;
+
+}
+.top{
+    top: 8%;
+
+}
+.middle{ 
+    top: 18%;
+}
+.bottom{
+top: 28%;
+}
+.change .top, .change .bottom{
+    top: 48%;
+    transform: rotate(-45deg);
+   
+}
+.change .middle{
+    top: 48%;
+    transform: rotate(45deg);
+   
+}
+
+.dis{
+    position: relative;
+visibility: hidden;
+top: 40px;
+margin-left: 6px;
+z-index: -1;
+color: blue;
+font-size: 30px;
+width: 200px;
+height: 200px;
+background: yellow;
+border: 2px solid red;
+float: left;
+}
+.dis2{
+    visibility: visible;
+    background: blue;
+    color: rgb(70, 63, 63);
+    height: 300px;
+  
+ 
+}
+.dis2:hover{
+background: yellowgreen;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.dis ul li a:before{
+    width: 100%;
+    height: 20px;
+    background: rgb(226, 51, 20);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    
+}
+.dis ul li a:hover:before{
+    transform: scaleX(1);
+
+}
+

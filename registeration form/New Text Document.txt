@@ -1,0 +1,68 @@
+var button = document.getElementById("button");
+button.addEventListener("click", function(){
+ var data =   [
+     document.getElementById("firstname").value,
+     document.getElementById("lastname").value,
+      document.getElementById("age").value,
+       document.getElementById("phone").value,
+     document.getElementById("username").value,
+      document.getElementById("email").value,
+      document.getElementById("password").value
+];
+
+greeting = "welcome" + data["4"];
+     document.getElementById("message").textContent += greeting;
+})
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+    <form action="">
+        <h2>    Register</h2>
+        <input type="text" name="" id="firstname" placeholder="your firstname" required>
+        <input type="text" name="" id="lastname" placeholder="your lastname" required>
+        <input type="date" name="" id="age" placeholder="your age" required>
+        <input type="number" name="" id="phone" placeholder="your phone number" required>
+        <input type="text" name="" id="username" placeholder="your username" required>
+        <input type="text" name="" id="email" placeholder="your email " required>
+        <input type="text" name="" id="password" placeholder="your password" required>
+        <button id="button">register</button>
+        <div id="message"></div>
+    </form>
+    <script src="demo.js"></script>
+</body>
+</html>
+
+form{
+    display: grid;
+    width: 50%;
+    height: 600px;
+    grid-gap: 2px;
+    border: 2px solid black;
+    margin: auto;
+}
+input{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+
+}
+button{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    border-radius:10px;
+    background-color: blue;
+    color: white;
+}
+h2{
+    color: blue;
+    text-align: center;
+}

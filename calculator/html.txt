@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+     <section>
+    
+        <form name="calculator" action="">
+                <input class="textview" name="textview" placeholder="0">
+             </form>
+         <div class="calbtn"> 
+         <input class="btn" type="button" value="C" onclick="clearbtn()">
+         <input class="btn" type="button" value="<" onclick="backbtn()">
+         <input class="btn" type="button" value="1" onclick="insertbtn('1')">
+         <input class="btn" type="button" value="2" onclick="insertbtn('2')">
+         <input class="btn" type="button" value="3" onclick="insertbtn('3')">
+         <input class="btn" type="button" value="4" onclick="insertbtn('4')">
+         <input class="btn" type="button" value="5" onclick="insertbtn('5')">
+         <input class="btn" type="button" value="6" onclick="insertbtn('6')">
+         <input class="btn" type="button" value="7" onclick="insertbtn('7')">
+         <input class="btn" type="button" value="8" onclick="insertbtn('8')">
+         <input class="btn" type="button" value="/" onclick="insertbtn('/')">
+         <input class="btn" type="button" value="9" onclick="insertbtn('9')">        
+         <input class="btn" type="button" value="0" onclick="insertbtn('0')">
+         <input class="btn" type="button" value="+" onclick="insertbtn('+')">
+         <input class="btn" type="button" value="-" onclick="insertbtn('-')">
+         <input class="btnequal" type="button" value="=" onclick="equalbtn()">
+         <input class="btn" type="button" value="%" onclick="insertbtn('%')">
+         <input class="btn" type="button" value="x" onclick="insertbtn('*')">
+         <input class="btn" type="button" value="." onclick="insertbtn('.')">    
+  
+</div>
+</section>
+    <script src="demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+#wrapper{
+    background-color: blue;
+    display: inline-block;
+    border-radius: 500px;
+    padding: 50px;
+    position: relative;
+    cursor: pointer;
+    position: fixed;
+    
+} 
+.circle{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.line{
+    position: absolute;
+    height: 12px;
+    width: 100px;
+    background: white;
+    border-radius: 8px;
+    transition: cubic-bezier(0.25, 0.1, 0.27, 1.55) 0.35s;  
+    
+}
+.top{
+    top: 18%
+}
+.middle{
+    top: 48%
+}
+.buttom{
+    top: 78%
+}
+
+.change .top{
+    transform: rotate(-45deg);
+    top: 48%;  
+   
+    
+}
+.change .middle{
+    transform: rotate(45deg);
+    
+    
+}
+.change .buttom{
+    transform: rotate(-45deg);
+    top: 48%;
+    
+   
+}
+
+
+
+
+
+
+
+
+.circle{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+.line{
+  position: absolute;
+  width: 100px;
+  height: 12px;
+  background: rgb(240, 224, 12);
+  border-radius: 8px;
+   border:2px solid rgb(58, 58, 192);     
+  transition: cubic-bezier(0.25, 0.1, 0.27, 1.55) 0.35s;
+}
+.top{
+  top: 18%
+}
+.middle{
+  top: 48%
+}
+.buttom{
+  top: 78%
+}
+.change .top,.change .buttom{
+  transform: rotate(-45deg);
+   
+}
+.change .middle{
+  transform: rotate(45deg); 
+} 

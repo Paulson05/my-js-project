@@ -1,0 +1,65 @@
+div{
+    background-color: red;
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    transform:rotate(-405deg);
+    border-radius: 40px 5px 40px 100px;
+    -webkit-border-radius: 40px 5px 40px 100px;
+    -moz-border-radius: 40px 5px 40px 100px;
+    -ms-border-radius: 40px 5px 40px 100px;
+    -o-border-radius: 40px 5px 40px 100px;
+    -webkit-transform:rotate(-405deg);
+    -moz-transform:rotate(-405deg);
+    -ms-transform:rotate(-405deg);
+    -o-transform:rotate(-405deg);
+}
+p{
+    padding:  1px;
+    color: white;
+    transform:rotate(405deg);
+    -webkit-transform:rotate(405deg);
+    -moz-transform:rotate(405deg);
+    -ms-transform:rotate(405deg);
+    -o-transform:rotate(405deg);
+}
+.active{
+visibility: visible;
+}
+.active2{
+    visibility: visible;
+    }
+
+
+
+
+
+var likebtn = document.getElementById("like");
+var unlikebtn =  document.getElementById("unlike");
+var btnnumlike  =document.getElementById("btnnumlike");
+var btnnumunlike  =document.getElementById("btnnumunlike");
+var doc1 = document.getElementById("p1");
+var doc2 = document.getElementById("p2");
+likenum = 0;
+unlikenum = 0;
+likebtn.addEventListener("click", function () {
+    likenum++;
+    btnnumlike.textContent = likenum;
+    doc1.classList.toggle("active");
+   
+})
+unlikebtn.addEventListener("click", function () {
+    unlikenum++;
+    btnnumunlike.textContent = unlikenum;
+    doc2 .classList.toggle("active2");
+})
+
+
+
+<div id="p1"><p id="btnnumlike">0</p></div>
+<button id="like">like</button></i>
+<div id="p2"><p id="btnnumunlike">0</p></div>
+<button id="unlike">unlike</button>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="slidercontainer">  
+                <div class="showSlide fade">  
+                    <img src="images\w3.jpg" />  
+                    <div class="content">Slide1 heading</div>  
+                </div>  
+                <div class="showSlide fade">  
+                    <img src="images\w1.jpg" />  
+                    <div class="content">Slide2 heading</div>  
+                </div>  
+          
+                <div class="showSlide fade">  
+                    <img src="images\w5.jpg" />  
+                    <div class="content">Slide3 heading</div>  
+                </div>  
+                <div class="showSlide fade">  
+                    <img src="images\w2.jpg" />  
+                    <div class="content">Slide4 heading</div>  
+                </div>  
+                <!-- Navigation arrows -->  
+                <a class="left" onclick="nextSlide(-1)">?</a>  
+                <a class="right" onclick="nextSlide(1)">?</a>  
+            </div>
+    <script src="demo.js"></script>
+</body>
+</html>

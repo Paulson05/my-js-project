@@ -1,0 +1,25 @@
+var button = document.getElementById("button");
+button.addEventListener("click", function(){
+      var firstname = document.getElementById("firstname").value;
+     var lastname = document.getElementById("lastname").value;
+     var dob = document.getElementById("dob").value;
+     var username = document.getElementById("username").value;
+     var email = document.getElementById("email").value;
+     var password = document.getElementById("password").value;
+     var greeting = "";
+    //  if (button === "name") {
+    //      greeting = "welcome "  + username + "thanks !";
+
+    //  } 
+    //  else if (button === "name") {
+    //       greeting = "welcome "  + username + "thanks !";
+    //  }
+    //  else{
+    //     greeting = "welcome "  + username + "thanks !";
+    //  };
+    greeting += "hey ";
+    greeting += username;
+    greeting += "   thank you";
+
+    document.getElementById("message").textContent += greeting;
+});

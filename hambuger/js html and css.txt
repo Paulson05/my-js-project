@@ -1,0 +1,66 @@
+.hambuger{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.line{
+position: absolute;
+width: 100px;
+height: 12px;
+background: red;
+
+}
+.top{
+    top: 18%;
+
+}
+.middle{
+    top: 48%;
+}
+.bottom{
+top: 78%;
+}
+.change .top{
+    top: 48%;
+    transform: rotate(-45deg);
+   
+}
+.change .middle{
+    top: 48%;
+    transform: rotate(45deg);
+   
+}
+.change .bottom{
+    top: 48%;
+    transform: rotate(-45deg);
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javademo.css">
+    <title>Document</title>
+</head>
+<body>
+     
+         <div id="hambuger-box2" class="hambuger">
+             <span class="line top"></span>
+             <span class="line middle"></span>
+             <span class="line bottom"></span>
+         </div>
+    
+    <script src="demo.js"></script>
+</body>
+</html>
+
+
+
+var hambuger = document.getElementById("hambuger-box2");
+ hambuger.addEventListener("click", function(){
+document.body.classList.toggle("change");
+   
+ });
